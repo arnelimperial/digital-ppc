@@ -28,7 +28,7 @@ jobs:
         run: npm install -g firebase-tools
 
       - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v1
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           args: --only hosting
           token: ${{ secrets.FIREBASE_TOKEN }}
