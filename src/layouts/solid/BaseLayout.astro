@@ -1,0 +1,49 @@
+---
+import Head from "../../components/solid/Head.astro";
+import Header from "../../components/solid/Header.astro";
+import Banner from "../../components/solid/Header.astro";
+import Menu from "../../components/solid/Menu.astro";
+import Footer from "../../components/solid/Footer.astro";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <Header />
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <Menu />
+      </nav>
+
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <slot />
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- jquery scripts located on the public dir -->
+    <script is:inline src="/solid/jquery.min.js"></script>
+    <script is:inline src="/solid/jquery.scrollex.min.js"></script>
+    <script is:inline src="/solid/browser.min.js"></script>
+    <script is:inline src="/solid/breakpoints.min.js"></script>
+    <script src="../../scripts/solid/util.js"></script>
+    <script src="../../scripts/solid/main.js"></script>
+  </body>
+</html>

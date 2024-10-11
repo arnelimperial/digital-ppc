@@ -1,0 +1,29 @@
+---
+import Head from "../components/eventually/Head.astro";
+import Header from "../components/eventually/Header.astro";
+import Footer from "../components/eventually/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="is-preload">
+    <Header />
+    <main>
+      <div>
+        <a href="/home"><button>Main</button></a>
+        <a href="/technology"><button>Technology</button></a>
+        <a href="/space"><button>Space</button></a>
+        <a href="/globalization"><button>Globalization</button></a>
+      </div>
+    </main>
+    <footer id="footer">
+      <Footer />
+    </footer>
+
+    <script src="../scripts/eventually/main.js"></script>
+  </body>
+</html>

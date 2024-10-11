@@ -1,0 +1,105 @@
+---
+// @ts-nocheck
+import { fetchExhibits } from "./api";
+const exhibits = await fetchExhibits();
+// console.log(exhibits)
+---
+<!-- Thumbnail -->
+<section id="thumbnails">
+  <article>
+    <a class="thumbnail" href={ exhibits[0].fields.imageUrl } data-position="left center"
+      ><img src={ exhibits[0].fields.imageUrl } alt={ exhibits[0].fields.description } /></a
+    >
+    <h2>{ exhibits[0].fields.title }</h2>
+    <p>{ exhibits[0].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[1].fields.imageUrl }
+      ><img src={ exhibits[1].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[1].fields.title }</h2>
+    <p>{ exhibits[1].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[2].fields.imageUrl } data-position="top center"
+      ><img src={ exhibits[2].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[2].fields.title }</h2>
+    <p>{ exhibits[2].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[3].fields.imageUrl }
+      ><img src={ exhibits[3].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[3].fields.title }</h2>
+    <p>
+      { exhibits[3].fields.description }
+    </p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[4].fields.imageUrl } data-position="top center"
+      ><img src={ exhibits[4].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[4].fields.title }</h2>
+    <p>{ exhibits[4].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[5].fields.imageUrl }
+      ><img src={ exhibits[5].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[5].fields.title }</h2>
+    <p>{ exhibits[5].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[6].fields.imageUrl }
+      ><img src={ exhibits[6].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[6].fields.title }</h2>
+    <p>
+      { exhibits[6].fields.description }
+    </p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[7].fields.imageUrl }
+      ><img src={ exhibits[7].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[7].fields.title }</h2>
+    <p>
+      { exhibits[7].fields.imageUrl }
+    </p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[8].fields.imageUrl }
+      ><img src={ exhibits[8].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[8].fields.title }</h2>
+    <p>
+      { exhibits[8].fields.description }
+    </p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[9].fields.imageUrl }
+      ><img src={ exhibits[9].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[9].fields.title }</h2>
+    <p>
+      { exhibits[9].fields.description }
+    </p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[10].fields.imageUrl }
+      ><img src={ exhibits[10].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[10].fields.title }</h2>
+    <p>{ exhibits[10].fields.description }</p>
+  </article>
+  <article>
+    <a class="thumbnail" href={ exhibits[11].fields.imageUrl }
+      ><img src={ exhibits[11].fields.imageUrl } alt="" /></a
+    >
+    <h2>{ exhibits[11].fields.title }</h2>
+    <p>
+      { exhibits[11].fields.description }
+    </p>
+  </article>
+</section>

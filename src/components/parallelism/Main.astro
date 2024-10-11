@@ -1,0 +1,121 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { fetchDocuments } from "./fetchDocuments";
+const exhibits = await fetchDocuments();
+console.log(exhibits);
+---
+
+<section id="main">
+  <!-- Items -->
+  <div class="items">
+    <div class="item intro span-2">
+      <h1>Globalization</h1>
+      <p>
+        {SITE_DESCRIPTION}
+      </p>
+    </div>
+    <article class="item thumb span-2">
+      <h2>{exhibits[5].title}</h2>
+      <a href={exhibits[5].imageUrl} class="image"
+        ><img src={exhibits[5].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-3">
+      <h2>{exhibits[12].title}</h2><a href={exhibits[12].imageUrl} class="image"
+        ><img src={exhibits[12].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-1">
+      <h2>{exhibits[17].title}</h2><a href={exhibits[17].imageUrl} class="image"
+        ><img src={exhibits[17].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-3">
+      <h2>{exhibits[13].title}</h2><a href={exhibits[13].imageUrl} class="image"
+        ><img src={exhibits[13].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[10].title}</h2><a href={exhibits[10].imageUrl} class="image"
+        ><img src={exhibits[10].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[2].title}</h2>
+      <a href={exhibits[2].imageUrl} class="image"
+        ><img src={exhibits[2].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-1">
+      <h2>{exhibits[7].title}</h2>
+      <a href={exhibits[7].imageUrl} class="image"
+        ><img src={exhibits[7].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[8].title}</h2><a href={exhibits[8].imageUrl} class="image"
+        ><img src={exhibits[8].imageUrl} alt="" /></a
+      >
+    </article>
+  </div>
+
+  <!-- Items -->
+  <div class="items">
+    <article class="item thumb span-1">
+      <h2>{exhibits[9].title}</h2><a href={exhibits[9].imageUrl} class="image"
+        ><img src={exhibits[9].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[1].title}</h2>
+      <a href={exhibits[1].imageUrl} class="image"
+        ><img src={exhibits[1].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[11].title}</h2><a href={exhibits[11].imageUrl } class="image"
+        ><img src={exhibits[11].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[14].title}</h2><a href={exhibits[14].imageUrl} class="image"
+        ><img src={exhibits[14].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[6].title}</h2>
+      <a href={exhibits[6].imageUrl} class="image"
+        ><img src={exhibits[6].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[3].title}</h2>
+      <a href={exhibits[3].imageUrl} class="image"
+        ><img src={exhibits[3].imageUrl} alt="" /></a
+      >
+    </article>
+
+    <article class="item thumb span-1">
+      <h2>{exhibits[4].title}</h2>
+      <a href={exhibits[4].imageUrl} class="image"
+        ><img src={exhibits[4].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-1">
+      <h2>{exhibits[15].title}</h2><a href={exhibits[15].imageUrl} class="image"
+        ><img src={exhibits[15].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[16].title}</h2><a href={exhibits[16].imageUrl} class="image"
+        ><img src={exhibits[16].imageUrl} alt="" /></a
+      >
+    </article>
+    <article class="item thumb span-2">
+      <h2>{exhibits[0].title}</h2>
+      <a href={exhibits[0].imageUrl} class="image"
+        ><img src={exhibits[0].imageUrl} alt="" /></a
+      >
+    </article>
+  </div>
+</section>

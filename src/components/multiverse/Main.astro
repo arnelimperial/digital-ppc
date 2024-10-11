@@ -1,0 +1,21 @@
+---
+// @ts-nocheck
+import { fetchDocuments } from "./fetchDocuments";
+const exhibits = await fetchDocuments();
+---
+
+<div id="main">
+  {
+    exhibits.map((exhibit) => (
+      <article key={exhibit.id} class="thumb">
+        <a href={ exhibit.imageUrl } class="image">
+          <img src={ exhibit.imageUrl } alt="" />
+        </a>
+        <h2 style="font-weight: 800; color: rgb(255, 208, 0);">{ exhibit.title }</h2>
+        <p>
+      { exhibit.description }
+        </p>
+      </article>
+    ))
+  }
+</div>

@@ -1,0 +1,32 @@
+---
+import Head from "../components/lens/Head.astro";
+import Header from "../components/lens/Header.astro";
+import Main from "../components/lens/Main.astro";
+import Footer from "../components/lens/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="is-preload-0 is-preload-1 is-preload-2">
+    <main>
+      <div id="main">
+        <header id="header">
+          <Header />
+        </header>
+        <Main />
+        <footer id="footer">
+          <Footer />
+        </footer>
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script is:inline src="/lens/jquery.min.js"></script>
+    <script is:inline src="/lens/browser.min.js"></script>
+    <script is:inline src="/lens/breakpoints.min.js"></script>
+    <script src="../scripts/lens/main.js"></script>
+  </body>
+</html>
